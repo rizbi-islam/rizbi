@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rizbi-islam.github.io/myprofile/sitemap.xml
+Sitemap: https://rizbi-islam.github.io/r_repo/sitemap.xml
