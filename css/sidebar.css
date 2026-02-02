@@ -1,0 +1,104 @@
+/* Quick Contact Sidebar */
+.quick-contact-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 5px;
+    background: white;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+}
+
+.quick-contact-sidebar.hidden {
+    opacity: 0;
+    transform: translateX(30px);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.quick-contact-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.quick-contact-btn:hover {
+    transform: scale(1.1) translateX(-5px);
+}
+
+.quick-contact-btn .tooltip {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--secondary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.quick-contact-btn:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    right: 65px;
+}
+
+.quick-contact-btn.linkedin {
+    background: #0077b5;
+}
+
+.quick-contact-btn.github {
+    background: #333;
+}
+
+.quick-contact-btn.mail {
+    background: #ea4335;
+}
+
+.quick-contact-btn.whatsapp {
+    background: #25d366;
+}
+
+.quick-contact-btn.x {
+    background: #0d0e0f;
+}
+
+@media (max-width: 768px) {
+    .quick-contact-sidebar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        right: 12px;
+        top: auto;
+        bottom: 12px;
+        transform: none;
+        border-radius: 12px;
+    }
+
+    .quick-contact-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+}

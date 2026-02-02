@@ -1,0 +1,141 @@
+/* Main Content */
+main {
+    padding: 3rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--light-gray);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h2 i {
+    color: var(--accent);
+}
+
+/* Summary */
+.summary-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--secondary);
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+}
+
+.experience-title {
+    font-size: 1.3rem;
+    color: var(--secondary);
+}
+
+.experience-date {
+    background: var(--light-gray);
+    color: var(--secondary);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.experience-company {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.experience-company i {
+    font-size: 0.9rem;
+}
+
+.experience-location {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.experience-desc {
+    margin-top: 0.8rem;
+}
+
+.experience-desc ul {
+    padding-left: 1.2rem;
+}
+
+.experience-desc li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.experience-desc li:before {
+    content: "▸";
+    color: var(--accent);
+    position: absolute;
+    left: -1rem;
+}
+
+/* Expandable Sections */
+.expandable-section {
+    margin-top: 2rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.expandable-section .section-subtitle {
+    background: var(--light);
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.expandable-content {
+    padding: 1.5rem;
+    max-height: none;
+    overflow: visible;
+    transition: none;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,8 @@
+# Ignore guide directory
+/guide/
+
+# Ignore specific root markdown files
+/Image_OPTIMIZATION.md
+/QUICK_START.md
+/README_SEO.md
+/SEO_COMPLETE.md

@@ -1,0 +1,67 @@
+/* Social & Contact Buttons */
+.social-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: white;
+    color: var(--secondary);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.social-btn.github {
+    background: #333;
+    color: white;
+}
+
+.social-btn.mail {
+    background: #ea4335;
+    color: white;
+}
+
+.social-btn.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.social-btn.x {
+    background: #0c0c0c;
+    color: white;
+}
+
+.social-btn.site {
+    background: var(--primary);
+    color: white;
+}
+
+/* Back-to-top styles moved to `buttons-back-top.css` to avoid duplication */
+
+@media (max-width: 768px) {
+    .social-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
